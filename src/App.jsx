@@ -6,6 +6,7 @@ import './App.css'
 import Accordian from './components/accordian'
 import RandomColor from './components/random-color'
 import StarRating from './components/star-rating'
+import ImageSlider from './components/image-slider'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +19,10 @@ function App() {
       {/* <RandomColor /> */}
 
       {/* Star Rating component  */}
-      <StarRating noOFStars={10} />
+      {/* <StarRating noOFStars={10} /> */}
+
+      {/* Image Slider component */}
+      <ImageSlider />
     </div>
   )
 }
