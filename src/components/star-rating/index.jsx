@@ -11,7 +11,7 @@ export default function StarRating({noOFStars = 5}){
         setRating(currentIndex);
     };
 
-    function handleMouseEnter(currentIndex){
+    function handleMouseMove(currentIndex){
         setHover(currentIndex);
     };
     function handleMouseLeave(){
@@ -27,7 +27,7 @@ export default function StarRating({noOFStars = 5}){
                     key={index}
                     className={index <= (rating || hover) ? 'active' : 'inactive'}
                     onClick={() => handleClick(index)}
-                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseMove={() => handleMouseMove(index)}
                     onMouseLeave={() => handleMouseLeave()}
                     size={40}
                 />
