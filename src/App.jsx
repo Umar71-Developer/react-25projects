@@ -7,9 +7,10 @@ import Accordian from './components/accordian'
 import RandomColor from './components/random-color'
 import StarRating from './components/star-rating'
 import ImageSlider from './components/image-slider'
+import LoadMoreData from './components/load-more-data'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <div className='app'>
@@ -22,7 +23,12 @@ function App() {
       {/* <StarRating noOFStars={10} /> */}
 
       {/* Image Slider component */}
-      <ImageSlider url={"https://picsum.photos/v2/list"} limit={"10"} page={'1'}/>
+      {/* <ImageSlider url={"https://picsum.photos/v2/list"} limit={"10"} page={'1'}/> */}
+
+
+      {/* Load more products component */}
+
+      <LoadMoreData />
     </div>
   )
 }
