@@ -8,6 +8,8 @@ import RandomColor from './components/random-color'
 import StarRating from './components/star-rating'
 import ImageSlider from './components/image-slider'
 import LoadMoreData from './components/load-more-data'
+import TreeViewer from './components/tree-viewer'
+import {menus} from './components/tree-viewer/data'
 
 function App() {
   
@@ -28,7 +30,10 @@ function App() {
 
       {/* Load more products component */}
 
-      <LoadMoreData />
+      {/* <LoadMoreData /> */}
+
+      {/* Tree viewer component */}
+      <TreeViewer menus={menus}/>
     </div>
   )
 }
